@@ -1,16 +1,11 @@
 <template>
     <div class="content">
+        <i>Strong Fade and switch color</i>
         <div class="btn-container">
-            <button>Animation</button>
+            <button>&lt;Button&gt;</button>
         </div>
         <div class="btn-container">
-            <a href="#">Boutons</a>
-        </div>
-        <div class="btn-container">
-            <button>Stylisé</button>
-        </div>
-        <div class="btn-container">
-            <a href="#">Autonome</a>
+            <a href="#">&lt;A&gt;</a>
         </div>
     </div>
 </template>
@@ -27,12 +22,14 @@ export default {
     justify-content: space-evenly;
     align-items: center;
 
+    position: relative;
+
     .btn-container{
         padding: 1px;
 
         button, a{
             border: 1px solid rgba(253, 253, 253, 0.247);
-            background: none;
+            background: #252525;
             text-align: center;
             color: white;
 
@@ -51,8 +48,7 @@ export default {
 
     .btn-container:hover {
         button, a{
-            opacity: 0.8;
-            transform: translateY(15px);
+            opacity: 0.4;
         }
     }
 
