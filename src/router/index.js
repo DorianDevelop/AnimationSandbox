@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import ButtonsPage from '@/views/ButtonsPage.vue';
 import CardsPage from '@/views/CardsPage.vue';
+import OthersPage from '@/views/OthersPage.vue';
 import HomePage from '@/views/HomePage.vue';
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     path: '/cards',
     name: 'Cards',
     component: CardsPage
+  },
+  {
+    path: '/others',
+    name: 'Others',
+    component: OthersPage
   }
 ];
 

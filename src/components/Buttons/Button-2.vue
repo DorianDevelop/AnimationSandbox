@@ -23,6 +23,7 @@ export default {
     align-items: center;
 
     position: relative;
+    padding-top: 3rem;
 
     .btn-container{
         padding: 1px;

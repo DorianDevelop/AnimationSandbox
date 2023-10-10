@@ -14,6 +14,7 @@ export default {
         items: [
             { name: 'Buttons', route: '/buttons' },
             { name: 'Cards', route: '/cards' },
+            { name: 'Others', route: '/others' },
             // ... other items
         ]
         };

@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .content{
+    padding-top: 3rem;
 
     .btn-container{
         padding: 1px;
