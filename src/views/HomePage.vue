@@ -1,4 +1,5 @@
 <template>
+  <HeaderPage />
   <div class="grid-container">
     <div v-for="item in items" :key="item.name" @click="navigate(item.route)">
       {{ item.name }}
@@ -7,17 +8,23 @@
 </template>
 
 <script>
+import HeaderPage from '@/components/HeaderPage.vue';
+
 export default {
     name : "HomePage",
     data() {
         return {
         items: [
             { name: 'Buttons', route: '/buttons' },
+            { name: 'Menus', route: '/menus' },
             { name: 'Cards', route: '/cards' },
             { name: 'Others', route: '/others' },
             // ... other items
         ]
         };
+    },
+    components:{
+      HeaderPage
     },
     methods: {
         navigate(route) {
@@ -29,6 +36,7 @@ export default {
 
 <style lang="scss">
 .grid-container {
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;

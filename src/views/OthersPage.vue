@@ -1,15 +1,20 @@
 <template>
-  <div class="animations-container">
+  <HeaderPage />
+  <div class="content-containers">
     <component v-for="component in components" :key="component.name" :is="component.component" />
   </div>
 </template>
 
 <script>
+import HeaderPage from '@/components/HeaderPage.vue';
 export default {
   data() {
     return {
       components: [],
     };
+  },
+  components:{
+    HeaderPage
   },
   created() {
     // Automatically import all Vue components from the Buttons directory

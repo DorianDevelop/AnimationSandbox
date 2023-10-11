@@ -20,7 +20,7 @@ export default {
   created() {
     // Automatically import all Vue components from the Buttons directory
     const requireComponent = require.context(
-      '@/components/Cards',
+      '@/components/Menus',
       false,
       /[\w-]+\.vue$/
     );

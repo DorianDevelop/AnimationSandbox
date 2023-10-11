@@ -24,13 +24,28 @@ export default {
     overflow: hidden;
 }
 
+.scratch-container::before{
+    content: 'Hello World!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    color: rgb(255, 255, 255);
+
+    z-index: 5;
+}
+
 .scratch-front{
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    background: white;
+    background: rgb(177, 177, 177);
 
     transition: transform 1s ease;
+
+    z-index: 10;
 }
 
 .scratch-container:hover .scratch-front{
