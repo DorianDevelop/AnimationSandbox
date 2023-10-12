@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+        <i>Sliding front</i>
         <div class="scratch-container">
             <div class="scratch-front"></div>
         </div>

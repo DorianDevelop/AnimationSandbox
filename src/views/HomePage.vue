@@ -55,7 +55,7 @@ export default {
       font-size:4rem;
 
       cursor: pointer;
-      transition: opacity 0.12s ease;
+      transition: opacity 0.2s ease;
     }
 
     div:hover{
