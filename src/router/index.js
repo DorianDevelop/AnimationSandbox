@@ -3,6 +3,7 @@ import ButtonsPage from '@/views/ButtonsPage.vue';
 import CardsPage from '@/views/CardsPage.vue';
 import OthersPage from '@/views/OthersPage.vue';
 import MenusPage from '@/views/MenusPage.vue';
+import HeadersPage from '@/views/HeadersPage.vue';
 import HomePage from '@/views/HomePage.vue';
 
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
     path: '/Menus',
     name: 'Menus',
     component: MenusPage
+  },
+  {
+    path: '/Headers',
+    name: 'Headers',
+    component: HeadersPage
   }
 ];
 

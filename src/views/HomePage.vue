@@ -19,6 +19,7 @@ export default {
             { name: 'Menus', route: '/menus' },
             { name: 'Cards', route: '/cards' },
             { name: 'Others', route: '/others' },
+            { name: 'Headers', route: '/headers' },
             // ... other items
         ]
         };

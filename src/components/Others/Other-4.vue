@@ -42,7 +42,7 @@ export default {
 
                 current.style.transform = `translate(${dx}px, ${dy}px)`;
 
-                displacement *= 0.8; // Reduce displacement for inner divs
+                displacement *= 0.9; // Reduce displacement for inner divs
                 current = current.firstElementChild;
             }
         }
