@@ -3,16 +3,24 @@
         <i>Infinite mirror effect</i>
         <div class="container-div"  @mousemove="handleMouseMove">
             <div class="outer" >
-                <div class="less-outer">
-                    <div class="less-less-outer">
-                        <div class="not-inner">
-                            <div class="close-to-inner">
-                                <div class="inner-maybe-but-no">
-                                    <div class="inner"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                <div>
+                <div>
+                <div>
+                <div>
+                <div>
+                <div>
+                <div>
+                <div>
+                    <div class="inner"></div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -21,7 +29,11 @@
 
 <script>
 export default {
-    name : "Other-4",
+    data(){
+        return{
+
+        }
+    },
     methods: {
         handleMouseMove(event) {
             const outer = event.currentTarget;
@@ -63,7 +75,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(128, 128, 128, 0.295);
+    animation: rainbow infinite 5s linear;
 }
 .outer div{
     width: 90%;
@@ -84,5 +96,18 @@ export default {
 
 .inner{
     background: #252525 !important;
+}
+
+
+
+@keyframes rainbow {
+    0%   { background: rgba(255, 0, 0, 0.233); }
+    14%  { background: rgba(255, 166, 0, 0.233); }
+    28%  { background: rgba(255, 255, 0, 0.233); }
+    42%  { background: rgba(0, 128, 0, 0.233); }
+    57%  { background: rgba(0, 0, 255, 0.233); }
+    71%  { background: rgba(76, 0, 130, 0.233); }
+    85%  { background: rgba(238, 130, 238, 0.233); }
+    100% { background: rgba(255, 0, 0, 0.233); } /* This is to ensure a smooth transition back to the start when looping */
 }
 </style>

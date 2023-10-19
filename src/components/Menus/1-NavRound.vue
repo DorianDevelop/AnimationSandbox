@@ -10,7 +10,6 @@
 
 <script>
 export default {
-    name : "Menu-1",
     data() {
         return {
             selectedId : 5,

@@ -9,7 +9,6 @@
 
 <script>
 export default {
-    name : "Other-1",
 }
 </script>
 

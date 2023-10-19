@@ -12,7 +12,6 @@
 
 <script>
 export default {
-    name : "Button-4",
 }
 </script>
 

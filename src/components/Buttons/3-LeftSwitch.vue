@@ -1,18 +1,19 @@
 <template>
     <div class="content">
-        <i>Strong Fade and switch color</i>
+        <i>Incoming switch</i>
         <div class="btn-container">
             <button>&lt;Button&gt;</button>
         </div>
         <div class="btn-container">
-            <a href="#">&lt;A&gt;</a>
+            <a href="#">
+                &lt;A&gt;
+            </a>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name : "Button-2",
 }
 </script>
 
@@ -26,19 +27,27 @@ export default {
     padding-top: 3rem;
 
     .btn-container{
-        padding: 1px;
+
+        transition: all 2s ease;
+        background: linear-gradient(90deg, #ffffff 50%, #252525 50%); 
+        background-size: 300px;
+        background-position: -150px;
 
         &:hover {
+            background-position: 0px;
             button, a{
-                opacity: 0.4;
+                background-position: 0px;
             }
         }
 
         button, a{
             border: 1px solid rgba(253, 253, 253, 0.247);
-            background: #252525;
+            background: linear-gradient(90deg, #252525 50%, #ffffff 50%); 
+            background-size: 300px;
+            background-position: -150px;
             text-align: center;
-            color: white;
+            color: transparent;
+            background-clip: text;
 
             padding: 1rem 2.5rem;
             width: 150px;
@@ -46,16 +55,9 @@ export default {
 
             text-decoration: none;
             cursor: pointer;
-            transition: all 0.2s ease, color 0.15s ease;
+            transition: all 2s ease;
 
             display: inline-block;
-
-            
-            &:active{
-                opacity: 1;
-                background: white;
-                color: #252525;
-            }
         }
     }
 }
